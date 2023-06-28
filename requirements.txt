@@ -6,3 +6,4 @@ matplotlib
 numpy
 upsetplot
 openpyxl
+nltk
