@@ -47,7 +47,7 @@ def add_numbers_on_bars(plot):
 
 
 
-st.title("Application Analyize Dashboard")
+st.title("Hello World!")
 
 
 uploaded_file = st.file_uploader("Choose a file", type="xlsx")
