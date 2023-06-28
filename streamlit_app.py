@@ -59,7 +59,7 @@ st.markdown("# 1. Analyzing Applicants' Interests")
 interest_column = df["Which track(s) of work will you be interested in? (Select as many as you are interested in)."]
 interests_matrix = pd.DataFrame()
 interests_lists = []
-for i, interests in interest_column.iteritems():
+for i, interests in interest_column.iterrows():
     interests = re.sub(r'\(.*?\)', '', interests)
     interests = interests.split(",")
     temp = []
@@ -94,7 +94,7 @@ st.markdown("# 2. Analyzing Applicants' Status")
 status_column = df["What are the following statements can describe you status?"]
 status_matrix = pd.DataFrame()
 status_lists = []
-for i, status in status_column.iteritems():
+for i, status in status_column.iterrows():
     status = re.sub(r'\(.*?\)', '', status)
     temp = []
     if ", I am currently working " in status:
@@ -144,7 +144,7 @@ indicators_column = df["[Optional] To comply with government reporting requireme
 indicators_column = indicators_column.astype(str)
 indicators_matrix = pd.DataFrame()
 indicators_lists = []
-for i, indicators in indicators_column.iteritems():
+for i, indicators in indicators_column.iterrows():
     indicators = indicators.split(",")
     temp = []
     for indicator in indicators:
