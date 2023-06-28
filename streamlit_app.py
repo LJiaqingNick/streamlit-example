@@ -52,7 +52,7 @@ st.title("Application Analyize Dashboard")
 
 # uploaded_file = st.file_uploader("Choose a file", type="xlsx")
 # if uploaded_file is not None:
-df = pd.read_excel("Application Data analysis .xlsx")
+df = pd.read_excel("Application Data analysis .xlsx", engine='openpyxl')
 
 
 st.markdown("# 1. Analyzing Applicants' Interests")
