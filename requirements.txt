@@ -2,7 +2,6 @@ altair
 pandas
 streamlit
 seaborn
-re
 matplotlib
 numpy
 upsetplot
